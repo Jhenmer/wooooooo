@@ -192,7 +192,7 @@ body {
 
 .modal {
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .songs {
@@ -274,6 +274,10 @@ body {
     color: white;
 
     line-height: 1.8;
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
 }
 
 .song-player {
@@ -400,6 +404,13 @@ body {
     #backBtn {
 
         font-size: 20px;
+    }
+
+    .modal {
+        width: 92vw;
+        padding: 20px;
+        max-height: 90vh; /* Gives it a bit more room on small phones */
+        -webkit-overflow-scrolling: touch; /* Makes scrolling smooth on iPhones */
     }
 
 }
