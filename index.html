@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content = "width=device-width, initial-scale=1.0">
+    <title>     </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="heartScene" class="scene">
+
+    <svg id="heart" viewBox="0 0 512 512">
+        <path
+            id="heartPath"
+            d="M256 464s-32-28-96-86C76 300 32 244 32 164 32 96 88 48 156 48c44 0 76 24 100 56 24-32 56-56 100-56 68 0 124 48 124 116 0 80-44 136-128 214-64 58-96 86-96 86z"/>
+    </svg>
+
+    <p id="instruction">Click anywhere...</p>
+
+</div>
+
+<div id="envelopeScene" class="hidden">
+
+    <div class="envelope" id="envelope">
+        ✉️
+    </div>
+
+<div id="musicModal" class="modal hidden">
+
+    <button id="closeBtn">✕</button>
+
+    <h1>Choose a Song 🎵</h1>
+
+    <div class="songs">
+
+    <div class="song-card"
+         onclick="openSong('jtwya')">
+
+        <img src="images/jtwya.jpg"
+             class="song-image">
+
+        <h3>𝓙ust The Way You Are</h3>
+
+    </div>
+
+    <div class="song-card"
+         onclick="openSong('oca')">
+
+        <img src="images/oca.png"
+             class="song-image">
+
+        <h3>𝓞ne Call Away</h3>
+
+    </div>
+
+    <div class="song-card"
+         onclick="openSong('ybsh')">
+
+        <img src="images/ybsh.jpg"
+             class="song-image">
+
+        <h3>𝓨ou'll Be Safe Here</h3>
+
+    </div>
+
+</div>
+    </div>
+
+    <div id="songPopup" class="modal hidden">
+
+    <button id="backBtn">←</button>
+
+    <h1 id="songTitle"></h1>
+
+<div class="music-player">
+
+    <img
+        id="playerCover"
+        class="player-cover"
+        src="">
+
+    <audio
+        id="songPlayer"
+        controls>
+    </audio>
+
+</div>
+    <div class="message-box">
+
+        <p id="songMessage"></p>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
